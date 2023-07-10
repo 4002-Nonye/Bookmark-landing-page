@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    @apply flex flex-col 
+   
+}
+a{
+    @apply mr-12 text-very-dark-blue font-[400] text-lg tracking-wide 
+}
+.hoverRed{
+    @apply hover:text-soft-red cursor-pointer
+}
+.transition{
+    @apply transition-colors duration-500 ease-in
+}
+
+.displayHam{
+    @apply lg:hidden
+}
+.hoverBlue{
+    @apply hover:bg-white hover:text-soft-blue hover:border-soft-blue
+}
+.hoverDark{
+    @apply hover:border-black
+}
+.p{
+    @apply text-grayish-blue text-lg text-center lg:text-left 
+}
+.h1{
+    @apply xl:text-5xl mb-6 lg:text-4xl text-3xl text-center md:text-left text-very-dark-blue font-extrabold
+}
+.tab{
+    @apply hoverRed font-extrabold px-5 py-4 text-grayish-blue text-lg tracking-wide border-t border-opacity-40   border-grayish-blue  lg:border-t-0
+}
+.active{
+    box-shadow: red 0px 3px 0px 0px;
+    /* padding-bottom: 1.5rem; */
+    color:hsl(229, 31%, 21%);
+
+}
+.center{
+    @apply  flex flex-col text-center
+}
