@@ -5,7 +5,7 @@ import ImgTag from './ImgTag'
 
 const Ham = () => {
   return (
-  <ImgTag src={hamBurger}/>
+  <ImgTag src={hamBurger} />
   )
 }
 

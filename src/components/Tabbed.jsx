@@ -27,7 +27,7 @@ const Tabbed = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <>
-      <div className="border-b border-opacity-40 mt-24  border-grayish-blue flex flex-col lg:flex-row justify-between m-auto lg:w-[65%] w-[90%] text-center">
+      <div className="border-b border-opacity-40 mt-24  border-grayish-blue flex flex-col lg:flex-row justify-between m-auto lg:w-[65%] w-[85%] text-center">
         {" "}
         <Tab
           num={0}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,9 +10,11 @@ body{
     @apply flex flex-col 
    
 }
-a{
-    @apply mr-12 text-very-dark-blue font-[400] text-lg tracking-wide 
+ nav a{
+    @apply  text-very-dark-blue font-[400] text-lg tracking-wide 
 }
+a{
+    @apply mr-12 }
 .hoverRed{
     @apply hover:text-soft-red cursor-pointer
 }
@@ -30,7 +32,7 @@ a{
     @apply hover:border-black
 }
 .p{
-    @apply text-grayish-blue text-lg text-center lg:text-left 
+    @apply text-grayish-blue text-lg text-center md:text-left 
 }
 .h1{
     @apply xl:text-5xl mb-6 lg:text-4xl text-3xl text-center md:text-left text-very-dark-blue font-extrabold
@@ -46,4 +48,7 @@ a{
 }
 .center{
     @apply  flex flex-col text-center
+}
+.btm-foot svg path{
+    @apply hover:fill-soft-red
 }
