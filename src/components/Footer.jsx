@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./Button";
+
 import ImgTag from "./ImgTag";
 import logo from "../assets/images/logo.svg";
 import Link from "./Link";
@@ -38,23 +38,23 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-very-dark-blue text-grayish-blue flex  justify-center w-full flex-col lg:flex-row items-center py-11">
+      <div className="bg-very-dark-blue text-grayish-blue flex  justify-center w-full flex-col lg:flex-row items-center pt-11 pb-8">
         <div className="flex  justify-between w-[90%]  flex-col lg:flex-row items-center">
           <div className="flex flex-col lg:flex-row items-center">
             {" "}
             <ImgTag src={logo} />
             <Link
-              linkText="Features"
+             
               className="text-grayish-blue lg:my-0 my-8 text-xl mr-0 lg:ml-14 hoverRed transition tracking-wide "
-            />
+            >Features</Link>
             <Link
-              linkText="Pricing"
+             
               className="text-grayish-blue mb-8 lg:mb-0   text-xl mr-0 lg:ml-12 hoverRed transition tracking-wide "
-            />
+            >Pricing</Link>
             <Link
-              linkText="Contact"
+             
               className="text-grayish-blue mb-8 lg:mb-0 text-xl mr-0 lg:ml-12 hoverRed transition tracking-wide "
-            />
+            >Contact</Link>
           </div>
 
           <div className="flex w-[30%]  md:w-[15%] justify-between lg:w-[6%] cursor-pointer btm-foot ">
@@ -76,7 +76,16 @@ const Footer = () => {
             </svg>
           </div>
         </div>
+        
       </div>
+      <div className=" bg-very-dark-blue ">
+      <p className="attribution text-white tracking-wider text-center lg:text-right lg:pr-11" >
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" className="mr-0">Frontend Mentor</a>. Coded by <a href="https://github.com/4002-Nonye" className="mr-0">Nonye</a>.
+    </p>
+      </div>
+      
+      
+     
     </footer>
   );
 };

@@ -42,7 +42,6 @@ a{
 }
 .active{
     box-shadow: red 0px 3px 0px 0px;
-    /* padding-bottom: 1.5rem; */
     color:hsl(229, 31%, 21%);
 
 }
@@ -52,3 +51,9 @@ a{
 .btm-foot svg path{
     @apply hover:fill-soft-red
 }
+
+.hide{
+    height: 100vh;
+    overflow: hidden;
+}
+.attribution a {@apply text-soft-red}
